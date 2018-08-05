@@ -1,6 +1,6 @@
 {
   "name": "egg-serlina",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Serlina for Egg",
   "eggPlugin": {
     "name": "serlina"
