@@ -1,0 +1,7 @@
+{
+  "name": "serlina-test",
+  "scripts": {
+    "dev": "egg-scripts dev"
+  },
+  "version": "0.0.1"
+}
