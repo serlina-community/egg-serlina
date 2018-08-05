@@ -49,6 +49,28 @@ export default () => {
 
 Then visit `http://{your_host}/page1` and you will see the React page.
 
+> Please note that the egg `ctx` had been injected to your page:
+
+```js
+// {app_root}/client/page/page1.js
+
+export default class Page1 extends React.Component {
+
+  static async getInitialProps({ ctx }) {
+    // ctx is egg `ctx`
+    return {
+      data: await ctx.service.getDate()
+    }
+  }
+
+  render () {
+    return (
+      <div>{this.props.data}</div>
+    )
+  }
+}
+```
+
 ## Configuration
 
 ### options
