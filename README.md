@@ -47,6 +47,16 @@ export default () => {
 }
 ```
 
+```js
+// {app_root}/config/config.default.js
+
+exports.serlina = {
+  map: {
+    '/page1': 'page1'
+  }
+}
+```
+
 Then visit `http://{your_host}/page1` and you will see the React page.
 
 > Please note that the egg `ctx` had been injected to your page:
@@ -70,6 +80,18 @@ export default class Page1 extends React.Component {
   }
 }
 ```
+
+You can also render your page manually in controller:
+
+```js
+// app/controller/page1.js
+
+module.exports = async ctx => {
+  const rendered = await ctx.app.serlina.render('/page1', { ctx })
+}
+```
+
+> Remember to inject your `ctx` if you need it in `getInitialProps`. 
 
 ## Configuration
 
