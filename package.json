@@ -1,6 +1,6 @@
 {
   "name": "egg-serlina",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Serlina for Egg",
   "eggPlugin": {
     "name": "serlina"
@@ -11,7 +11,7 @@
     "egg-plugin"
   ],
   "dependencies": {
-    "serlina": "^0.1.0"
+    "serlina": "^0"
   },
   "devDependencies": {
     "autod": "^3.0.0",
