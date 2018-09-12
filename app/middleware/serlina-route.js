@@ -6,7 +6,7 @@ module.exports = () => {
     try {
       if (config.map && config.map[ctx.path]) {
         const rendered = await ctx.app.serlina.render(config.map[ctx.path], { ctx });
-        ctx.body = rendered.string;
+        ctx.body = rendered.body;
       }
     } finally {
       await next();
