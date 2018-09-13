@@ -40,7 +40,7 @@ Add a `client` folder and create the first page:
 ```
 
 ```js
-// {app_root}/client/page/page1.js
+// {app_root}/client/pages/page1.js
 
 export default () => {
   return <div>Hello Serlina</div>
@@ -62,7 +62,7 @@ Then visit `http://{your_host}/page1` and you will see the React page.
 > Please note that the egg `ctx` had been injected to your page:
 
 ```js
-// {app_root}/client/page/page1.js
+// {app_root}/client/pages/page1.js
 
 export default class Page1 extends React.Component {
 
