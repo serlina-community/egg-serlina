@@ -35,7 +35,7 @@ Add a `client` folder and create the first page:
 - app_root
   - app
 + - client
-+   - page
++   - pages
 +     - page1.js
 ```
 
