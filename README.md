@@ -14,7 +14,7 @@ egg-serlina is a [Serlina](https://github.com/djyde/serlina) binding for Egg. It
 ## Install
 
 ```bash
-$ npm i egg-serlina react react-dom --save
+$ npm i serlina egg-serlina react react-dom --save
 ```
 
 ## Usage
